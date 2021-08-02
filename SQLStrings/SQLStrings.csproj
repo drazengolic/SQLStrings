@@ -7,7 +7,15 @@
     <PackageId>SQLStrings</PackageId>
     <Version>0.1.0</Version>
     <Authors>Drazen Golic</Authors>
+    <Copyright>Copyright (c) Drazen Golic 2021</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <Description>
+      Keep SQL strings in .sql files and reference them via static properties in C#
+    </Description>
+    <PackageProjectUrl>https://github.com/drazengolic/SQLStrings</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/drazengolic/SQLStrings</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
