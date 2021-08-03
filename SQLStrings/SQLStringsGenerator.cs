@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Microsoft.CodeAnalysis;
-using System.Globalization;
 using Microsoft.CodeAnalysis.Text;
 using System.Linq;
 
@@ -43,8 +42,9 @@ namespace SQLStrings
         /// <param name="context">GeneratorExecutionContext</param>
         public static void ProcessEntry(AdditionalText file, GeneratorExecutionContext context)
         {
-            TextInfo textInfo = new CultureInfo("en-US",false).TextInfo;
-            var className = textInfo.ToTitleCase(Path.GetFileNameWithoutExtension(file.Path));
+            var classNameChars = Path.GetFileNameWithoutExtension(file.Path).ToCharArray();
+            classNameChars[0] = Char.ToUpperInvariant(classNameChars[0]); //capitalize first letter
+            var className = new String(classNameChars);
 
             var cb = new StringBuilder()
                 .AppendLine("namespace SQLStrings")

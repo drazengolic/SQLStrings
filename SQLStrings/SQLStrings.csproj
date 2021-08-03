@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild> <!-- Generates a package at build -->
     <IncludeBuildOutput>false</IncludeBuildOutput> <!-- Do not include the generator as a lib dependency -->
     <PackageId>SQLStrings</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Drazen Golic</Authors>
     <Copyright>Copyright (c) Drazen Golic 2021</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
