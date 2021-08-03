@@ -83,7 +83,7 @@ namespace SQLStrings
 
 You can also check the [ConsoleDemo](./ConsoleDemo/) app.
 
-## Caveats
+## Known issues
 
 1. Source generation may not always be up-to-date with the edited file when the analyzer is slow to kick in, so sometimes it may be necessary to restart OmniSharp (in VSCode) or Visual Studio
 2. If `SQLStrings_Enable` doesn't seem to work, you may need to add the following setting before the referenced files:
